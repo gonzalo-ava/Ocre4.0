@@ -907,172 +907,73 @@
     </div>
   </nav>
   
-<!-- Carrusel con tus imágenes locales -->
-<div class="hero-slider">
-  <div class="slide active" style="background-image: url('img/13.png')"></div>
-</div>
-
-<div class="hero-content">
-  <h1>Pigmentos Minerales de la Más Alta Calidad</h1>
-  <p>Materiales premium para construcción, arte y restauración patrimonial</p>
-  <a href="#productos" class="cta-button">Explorar Catálogo</a>
-</div>
-
-<style>
-.hero {
-  position: relative;
-  height: 80vh;
-  min-height: 400px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.hero-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  padding: 20px;
-  margin: 0 20px;
-  background-color: rgba(43, 41, 39, 0.911);
-  border-radius: 10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 25px;
-  background-color: #eaa51b;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #d19416;
-}
-
-/* Contenido principal */
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.product-section {
-  margin-top: 40px;
-}
-
-.product-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Galería responsive */
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.main-image-container {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.thumbnail-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.thumbnail {
-  width: calc(25% - 10px);
-  cursor: pointer;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 2px solid transparent;
-  transition: all 0.3s;
-}
-
-.thumbnail.selected {
-  border-color: #eaa51b;
-}
-
-.thumbnail img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Media Queries para móvil */
-@media (max-width: 768px) {
+  <div class="hero-slider">
+      <div class="slide active" style="background-image: url('img/13.png')"></div>
+      
+    </div>
+    
+    <div class="hero-content">
+      <h1>Pigmentos Minerales de la Más Alta Calidad</h1>
+      <p>Materiales premium para construcción, arte y restauración patrimonial</p>
+      <a href="#productos" class="cta-button">Explorar Catálogo</a>
+    </div>
+  </section>
+  
+  <style>
   .hero {
-    height: 60vh;
+    position: relative;
+    height: 80vh; /* Ajusta esta altura según necesites */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
   }
   
-  .hero-content h1 {
-    font-size: 1.8rem;
+  .hero-slider {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
   
-  .hero-content p {
-    font-size: 1rem;
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   
-  .thumbnail {
-    width: calc(50% - 10px);
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 50vh;
-    min-height: 300px;
+  .slide.active {
+    opacity: 1;
   }
   
-  .thumbnail {
-    width: calc(50% - 5px);
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(43, 41, 39, 0.911);
+    border-radius: 10px;
   }
-}
-</style>
   
+  .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #eaa51b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  </style>
   <!-- Contenido principal con fondo de imagen -->
   <div class="container">
     <div class="product-section" id="productos">
